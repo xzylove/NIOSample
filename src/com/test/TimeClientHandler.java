@@ -20,6 +20,8 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
         firstMessage = Unpooled.buffer(req.length);
         firstMessage.writeBytes(req);
     }
+    
+    
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {

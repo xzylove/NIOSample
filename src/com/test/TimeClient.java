@@ -26,6 +26,7 @@ public class TimeClient {
                             System.out.println("client initChannel..");
                             arg0.pipeline().addLast(new TimeClientHandler());
                         }
+                        
                     });
             // 发起异步连接操作
             ChannelFuture f = b.connect(host, port).sync();
